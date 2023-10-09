@@ -1,5 +1,6 @@
 {
   "title": "单键切换中英输入法: ⌘ ⌥ ⇧ Caps ",
+
   "rules": [
     {
       "description": "Massimo's - 短按 右 Command (⌘) 切换 ZH",
@@ -42,6 +43,28 @@
               "select_input_source": {
                 "language": "en"
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Massimo's - 短按右 Command 轮换输入法",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_control"]
             }
           ]
         }
