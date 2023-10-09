@@ -2,6 +2,52 @@
   "title": "单键切换中英输入法: ⌘ ⌥ ⇧ Caps ",
   "rules": [
     {
+      "description": "Massimo's - 短按 右 Command (⌘) 切换 ZH",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "zh*"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Massimo's - 短按 左 Option  (⌥) 切换 EN",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "select_input_source": {
+                "language": "en"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "(A1) 短按 左 Command (⌘) 轮换 ZH (通过 ⌃ + Space 实现) - 【与 A2 冲突，请二选一】",
       "manipulators": [
         {
