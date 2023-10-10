@@ -26,7 +26,7 @@
       ]
     },
     {
-      "description": "Massimo's - 短按 左 Option  (⌥) 切换 EN",
+      "description": "Massimo's - 短按 左 Command  (⌥) 切换 EN",
       "manipulators": [
         {
           "type": "basic",
@@ -64,7 +64,7 @@
           "to_if_alone": [
             {
               "key_code": "spacebar",
-              "modifiers": ["left_control"]
+              "modifiers": ["left_control", "left_option"]
             }
           ]
         }
